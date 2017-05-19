@@ -1,0 +1,246 @@
+<div data-role="view" data-title="Retailer" data-layout="main-nonav" data-stretched="true" data-model="app.vp04home" data-show="app.vp04home.onShow" data-after-show="app.vp04home.afterShow" id="vp04homeScreen" class="screen" data-reload="true">
+    <header class="header">
+        <a class="header-logo" href="index.html">Food Safety</a>
+        <ul class="nav nav-list pull-right">
+            <li>
+                <a class="menu-toggle" href="#profile">
+                    <span class="access-hide" data-bind="text : vp04homeModel.displayname"></span>
+                    <span class="avatar avatar-sm"><img alt="" src="Material/images/users/avatar-001.jpg"></span>
+                    <span class="header-close icon icon-close icon-lg"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <nav class="menu menu-right" id="profile">
+        <div class="menu-scroll">
+            <div class="menu-wrap">
+                <div class="menu-top">
+                    <div class="menu-top-img">
+                        <img alt="" src="Material/images/samples/landscape.jpg">
+                    </div>
+                    <div class="menu-top-info">
+                        <a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="alt" src="Material/images/users/avatar-001.jpg"></span><span data-bind="text : vp04homeModel.displayname"></span></a>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <ul class="nav">
+                        <li>
+                            <a href="javascript:void(0)"><span class="icon icon-account-box"></span>Profile Settings</a>
+                        </li>
+                        <li>
+                            <a data-bind="events:{click : vp04homeModel.logout}"><span class="icon icon-exit-to-app"></span>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="content-heading">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="content-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-sm-12">
+                        <h1 class="content-sub-heading"><span class="icon icon-verified-user"></span>Welcome <span data-bind="text : vp04homeModel.displayname"></span>!</h1>
+                        <hr />
+                        <div class="row" id="retailerPkgInventory">
+
+                        </div>
+                        <div id="retailertabstrip">
+                            <ul>
+                                <li id="#tab1" class="k-state-active">
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/home/pkg.png" />
+                                    </span> Package Console
+                                </li>
+                                <li>
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp2Home/ptrack.png" />
+                                    </span>Track Food Packs
+                                </li>
+                            </ul>
+
+                            <div>
+                                <h2 class="content-sub-heading">Package Catalog</h2>
+                                <div class="el-loading pkgcatalog">
+                                    <div class="el-loading-indicator">
+                                        <div class="progress progress-position-absolute-bottom">
+                                            <div class="load-bar">
+                                                <div class="load-bar-base">
+                                                    <div class="load-bar-content">
+                                                        <div class="load-bar-progress"></div>
+                                                        <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                        <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                        <div class="load-bar-progress load-bar-progress-red"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="load-bar">
+                                                <div class="load-bar-base">
+                                                    <div class="load-bar-content">
+                                                        <div class="load-bar-progress"></div>
+                                                        <div class="load-bar-progress load-bar-progress-red"></div>
+                                                        <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                        <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-wrap" id="pkgcatalog" tile-wrap-animation style="min-height:200px;position:relative">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Track Package</h2>
+                                    <div class="card-wrap">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-sm-12">
+                                                <div class="card">
+                                                    <div class="card-main">
+                                                        <div class="card-inner">
+                                                            <div style="margin:1em">
+                                                                <form class="form">
+                                                                    <div class="form-group form-group-label">
+                                                                        <div class="row">
+                                                                            <div class="col-md-10 col-md-push-1">
+                                                                                <label class="floating-label" for="pkgid">Package ID</label>
+                                                                                <input class="form-control" id="pkgid" data-bind="value: vp04homeModel.pkgid" required type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group align-center">
+                                                                        <div class="form-group-btn col-md-push-1">
+                                                                            <button class="btn btn-yellow waves-button waves-light waves-effect" type="button" data-bind="events : { click: vp04homeModel.showTransaction }"><span class="icon icon-search icon-lg"></span>Get Livestock History</button>
+                                                                            <button class="btn waves-button waves-effect" type="reset">Cancel </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="diagramsection">
+                                            <div class="col-lg-12 col-sm-12">
+                                                <h2 class="content-sub-heading">Transaction Information</h2>
+                                                <div class="card">
+                                                    <div class="card-main">
+                                                        <div class="card-inner">
+                                                            <div style="margin:1em">
+                                                                <div id="diagram" style="height:500px"></div>
+                                                                <div id="blockwindow"></div>
+                                                                <div class="fbtn-container" style="right:60px;bottom:200px;">
+                                                                    <div class="fbtn-inner">
+                                                                        <div class='my-legend'>
+                                                                            <div class='legend-title'>Legends</div>
+                                                                            <div class='legend-scale'>
+                                                                                <ul class='legend-labels'>
+                                                                                    <li><span style='background:#2196f3;'></span>Livestock Creation</li>
+                                                                                    <li><span style='background:#8700ff;'></span>Lot Creation</li>
+                                                                                    <li><span style='background:#00e68a;'></span>Inventory Transfer</li>
+                                                                                    <li><span style='background:#f44336;'></span>Rawmeat Creation</li>
+                                                                                    <li><span style='background:#ffaa00;'></span>Rawmeat Lot Creation</li>
+                                                                                    <li><span style='background:#e600e6;'></span>Package Creation</li>
+                                                                                    <li><span style='background:#1e4c96;'></span>Retailer</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <!--<div class='legend-source'>Source: <a href="#link to source">Name of source</a></div>-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .k-tabstrip-items {
+        background-image: none,linear-gradient(to bottom,#ffc107 0,#ffffff 100%);
+    }
+
+    .tile-collapse.active {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+</style>
+
+<script id="retailerPkgInventoryTemplate" type="text/x-kendo-template">
+
+    <table width="50%" align="center" class="km-nova">
+        <tr>
+            <td align="center" data-badge=""><b>Package Inventory</b> <div id="counter2" class="text-center pulse"><a><span class="count">${pkginventory}</span></a></div></td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+    </table>
+</script>
+
+<script id="pkgcatalogTemplate" type="text/x-kendo-template">
+    <div class="tile">
+        <div class="tile-inner">
+            Click each Package to review
+        </div>
+    </div>
+
+    #  var count= 0; for(var i = 0 ;i < pkg.length; i++){ #
+    #  for(var j = 0 ; j < pkg[i].pkg.length; j++){ var current = count++; #
+    <div class="tile tile-collapse tile-collapse-full">
+        <div class="tile-toggle" data-parent=".content" data-target="\#tile-collapse-${current}" data-toggle="tile">
+            <div class="pull-left tile-side">
+                <div class="avatar avatar-purple avatar-sm">
+                    <span class="icon icon-label"></span>
+                </div>
+            </div>
+            <div class="tile-inner">
+                <div class="text-overflow">Package ID - ${pkg[i].pkg[j].foodpackid}, recieved from ${pkg[i].transferdetail.from} on ${pkg[i].transferdetail.date}</div>
+            </div>
+        </div>
+        <div class="tile-active-show tile-active-show-still collapse" id="tile-collapse-${current}">
+            <div class="tile-sub">
+                <p>
+                    <strong>Package Type : </strong> ${pkg[i].pkg[j].packagetype} <br />
+                    <strong>Weight : </strong> ${pkg[i].pkg[j].weight} <br />
+                    <strong>Primal Cut : </strong> ${pkg[i].pkg[j].partname} <br />
+                    <strong>Perservation Process : </strong> ${pkg[i].pkg[j].perservationprocess} <br />
+                    <strong>CreatedDate : </strong> ${pkg[i].pkg[j].createddate} <br />
+                    <strong>Temperature : </strong> ${pkg[i].pkg[j].temperature} F<br />
+                    <strong>Source Rawmeat ID : </strong> ${pkg[i].pkg[j].sourcetag}<br />
+                    <strong>Company : </strong> ${pkg[i].pkg[j].company}<br />
+                    <strong>Certificate : </strong> ${pkg[i].pkg[j].certificate}
+            </div>
+            <div class="tile-footer">
+                <ul class="nav nav-list pull-left">
+                    <li>
+                        <a data-dismiss="tile" href="javascript:void(0)"><span class="icon icon-check"></span>&nbsp;Review</a>
+                    </li>
+                    <li>
+                        <a data-dismiss="tile" href="javascript:void(0)"><span class="icon icon-close"></span>&nbsp;Cancel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    # } #
+    # } #
+</script>

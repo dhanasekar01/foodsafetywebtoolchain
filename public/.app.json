@@ -1,0 +1,37 @@
+{
+  "type": "kendo-ui-mobile",
+  "views": [
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "home",
+      "components": [ ],
+      "title": "Welcome to Food Safety",
+      "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "vp0Home",
+      "components": [ ],
+      "title": "Welcome to Food Safety",
+      "addToNavigation": false
+    }
+  ],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "jsonDataProvider",
+      "source": "json",
+      "url": "https://",
+      "title": "JSON Data Service"
+    }
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "home",
+  "transition": "slide",
+  "showMoreTab": true,
+  "skin": "nova",
+  "skinMainColor": "#00ccff",
+  "skinTextColor": "#ffffff",
+  "skinAccentColor": "#9900ff"
+}

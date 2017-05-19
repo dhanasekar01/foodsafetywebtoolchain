@@ -1,0 +1,662 @@
+<div data-role="view" data-title="Fresh Meats" data-layout="main-nonav" data-model="app.vp02home" data-show="app.vp02home.onShow" data-after-show="app.vp02home.afterShow" id="vp02homeScreen" class="screen" data-reload="true">>
+    <header class="header">
+        <ul class="nav nav-list pull-left">
+            <li>
+                <a class="menu-toggle" href="#menu">
+                    <span class="access-hide">Menu</span>
+                    <span class="icon icon-menu icon-lg"></span>
+                    <span class="header-close icon icon-close icon-lg"></span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo" href="index.html">Food Safety</a>
+        <ul class="nav nav-list pull-right">
+            <li>
+                <a class="menu-toggle" href="#profile">
+                    <span class="access-hide" data-bind="text : vpo01homeModel.displayname"></span>
+                    <span class="avatar avatar-sm"><img alt="" src="Material/images/users/avatar-001.jpg"></span>
+                    <span class="header-close icon icon-close icon-lg"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <nav class="menu" id="menu">
+        <div class="menu-scroll">
+            <div class="menu-wrap">
+                <div class="menu-content">
+                    <ul class="nav">
+                        <li>
+                            <a data-bind="events: {click : vp02homeModel.openconsole}">Cattle Console</a>
+                        </li>
+                        <li>
+                            <a href="#">Cattle Catalog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu menu-right" id="profile">
+        <div class="menu-scroll">
+            <div class="menu-wrap">
+                <div class="menu-top">
+                    <div class="menu-top-img">
+                        <img alt="" src="Material/images/samples/landscape.jpg">
+                    </div>
+                    <div class="menu-top-info">
+                        <a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="alt" src="Material/images/users/avatar-001.jpg"></span><span data-bind="text : vp02homeModel.displayname"></span></a>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <ul class="nav">
+                        <li>
+                            <a href="javascript:void(0)"><span class="icon icon-account-box"></span>Profile Settings</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span class="icon icon-add-to-photos"></span>Upload Certificates</a>
+                        </li>
+                        <li>
+                            <a data-bind="events:{click : vp02homeModel.logout}"><span class="icon icon-exit-to-app"></span>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+       
+        <div class="content-inner">
+            <div class="container">
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-lg-10 col-sm-12">
+                        <h1 class="content-sub-heading"><span class="icon icon-verified-user"></span>Welcome <span data-bind="text : vp02homeModel.displayname"></span>!</h1>
+                        <hr />
+                        <div class="row" id="tysoninventory">
+
+                        </div>
+
+                        <div id="tysontabstrip">
+                            <ul>
+                                <li id="#tab1" class="k-state-active">
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp0Home/cattle.png" />
+                                    </span> Livestock
+                                </li>
+                                <li>
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp1Home/rawmeat.png" />
+                                    </span> Process
+                                </li>
+                                <li>
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp1Home/lot.png" />
+                                    </span> Lot Creation
+                                </li>
+                                <li>
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp1Home/transfer.png" />
+                                    </span> Transfer
+                                </li>
+                                <li>
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp1Home/track.png" />
+                                    </span> Track Rawmeat
+                                </li>
+                            </ul>
+
+                            <!--TAB ONE-->
+
+                            <div class="k-state-active">
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Search Livestock </h2>
+                                    <form class="form">
+                                        <div class="form-group form-group-label">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-push-1">
+                                                    <label class="floating-label" for="cattletagid">Ear Tag ID</label>
+                                                    <input class="form-control" id="cattletagid" data-bind="value: vp02homeModel.cattleTagid" required type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group align-center">
+                                            <div class="form-group-btn col-md-push-1">
+                                                <button class="btn btn-red waves-button waves-light waves-effect" type="button" data-bind="events : { click: vp02homeModel.getcattle }"><span class="icon icon-search icon-lg"></span>Get Cattle</button>
+                                                <button class="btn waves-button waves-effect" type="reset">Cancel </button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="row hide" id="cattlerow">
+                                        <div class="col-lg-12 col-sm-12">
+                                            <div class="el-loading cattleload">
+                                                <div class="el-loading-indicator">
+                                                    <div class="progress progress-position-absolute-bottom">
+                                                        <div class="load-bar">
+                                                            <div class="load-bar-base">
+                                                                <div class="load-bar-content">
+                                                                    <div class="load-bar-progress"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-red"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="load-bar">
+                                                            <div class="load-bar-base">
+                                                                <div class="load-bar-content">
+                                                                    <div class="load-bar-progress"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-red"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="cattleinfo"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Livestock Catalog</h2>
+                                    <div class="el-loading cattlecatalog">
+                                        <div class="el-loading-indicator">
+                                            <div class="progress progress-position-absolute-bottom">
+                                                <div class="load-bar">
+                                                    <div class="load-bar-base">
+                                                        <div class="load-bar-content">
+                                                            <div class="load-bar-progress"></div>
+                                                            <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                            <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                            <div class="load-bar-progress load-bar-progress-red"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="load-bar">
+                                                    <div class="load-bar-base">
+                                                        <div class="load-bar-content">
+                                                            <div class="load-bar-progress"></div>
+                                                            <div class="load-bar-progress load-bar-progress-red"></div>
+                                                            <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                            <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-wrap" id="cattlecatalog" tile-wrap-animation style="min-height:200px;position:relative">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- TAB TWO-->
+                            <div >
+                                <div class="">
+                                    <div class="col-lg-10 col-sm-12">
+
+                                        <p class="text-center">
+                                            <span class="avatar avatar-inline avatar-transparent pull-left">
+                                                <img alt="" src="components/vp1Home/rawmeat.png">
+                                            </span><h2 class="content-sub-heading">Create Raw Meat</h2>
+                                        </p>
+
+                                        <form class="form form-inline">
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="cattletag">Received Cattle Tag</label>
+                                                        <select id="cattletag" class="form-control" data-bind="value: vp02homeModel.cattletag" style="width: 100%;"></select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="rmcount">No of Raw meat</label>
+                                                        <input class="form-control" id="rmcount" data-bind="value: vp02homeModel.rmcount, events :{change : vp02homeModel.rmweightcreation}" type="number" min="1" max="4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-10 col-md-push-1">
+                                                        <div id="rmweight"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="cattlecertificate">Certificate</label>
+                                                        <select id="rmcertificate" class="form-control" data-bind="value: vp02homeModel.rmcertificate" style="width: 100%;">
+                                                            <option value="QualityCertificateTFM.pdf">Kosher Certificate</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-2 col-md-push-1">
+                                                        <button id="tysonopen" class="k-button" type="button">View</button>
+                                                        <div id="tysonwindow">
+                                                            <object width="550" height="500" data="components/vp1Home/QualityCertificateTFM.pdf"></object>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="cattlecertificate">Grade</label>
+                                                        <select id="rmgrade" class="form-control" style="width: 100%;">
+                                                            <option value=""></option>
+                                                            <option value="Prime">Prime</option>
+                                                            <option value="Choice">Choice</option>
+                                                            <option value="Selected">Selected</option>
+                                                            <option value="Standard">Standard</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-10 col-md-push-1">
+                                                        <div class="form-group-btn">
+                                                            <button class="btn btn-red waves-button waves-light waves-effect" type="button" data-bind="events :{click: vp02homeModel.createrm} "><span class="icon icon-add"></span>Create</button>
+                                                            <button class="btn waves-button waves-effect" type="reset">Cancel </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TAB THREE-->
+                            <div>
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Select Raw meats to create Lot</h2>
+                                    <div style="margin:1em">
+                                        <form>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5">
+                                                        <div class="media">
+                                                            <div class="media-object pull-left">
+                                                                <label class="form-icon-label" for="housebatchid"><span class="access-hide">Batch Number</span><i class="fa fa-barcode fa-2x" aria-hidden="true"></i></label>
+                                                            </div>
+                                                            <div class="media-inner">
+                                                                <input class="form-control" id="housebatchid" data-bind="value: vp02homeModel.batchid" type="text">
+                                                                <small><i>(Please scan rawmeat barcode)</i></small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <span class="align-center">OR</span>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <button class="btn btn-blue waves-button waves-light waves-effect" id="pickrawmeat" type="button"><span class="icon icon-search icon-lg"></span>Pick Rawmeats</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="rmdialog"></div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div id="selecthousebatch"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-btn">
+                                                <button class="btn waves-button waves-light waves-effect" id="createhouseBatch" type="button"><span class="icon icon-my-library-add icon-lg"></span>Create Lot</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>     
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Created Lots</h2>
+                                    <div class="el-loading rmbatchcatalog">
+                                        <div class="el-loading-indicator">
+                                            <div class="progress progress-position-absolute-bottom">
+                                                <div class="load-bar">
+                                                    <div class="load-bar-base">
+                                                        <div class="load-bar-content">
+                                                            <div class="load-bar-progress"></div>
+                                                            <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                            <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                            <div class="load-bar-progress load-bar-progress-red"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="load-bar">
+                                                    <div class="load-bar-base">
+                                                        <div class="load-bar-content">
+                                                            <div class="load-bar-progress"></div>
+                                                            <div class="load-bar-progress load-bar-progress-red"></div>
+                                                            <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                            <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-wrap" id="rmbatchcatalog" tile-wrap-animation style="min-height:200px;position:relative">
+
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+
+                            <!-- TAB FOUR-->
+                            <div>
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Select Lot to Transfer</h2>
+                                    <div style="margin:1em">
+                                        <form>
+                                            <div class="form-group form-group-label">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <label class="floating-label" for="sender">Select Receiver</label>
+                                                        <select id="housesender" class="form-control" data-bind="value: vp02homeModel.housesender" style="width: 100%;">
+                                                            <option value="Meat Packaging Ltd">Meat Packaging Ltd</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="rmbatchdialog"></div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div id="selectrmbatch"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-btn">
+                                                <button class="btn btn-blue waves-button waves-light waves-effect" id="pickrmbatch" type="button"><span class="icon icon-search icon-lg"></span>Pick Rawmeat Lot</button>
+                                                <button class="btn waves-button waves-light waves-effect" id="transferrawmeat" type="button"><span class="icon icon-local-shipping icon-lg"></span>Transfer Selected Lot</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--TAB FIVE-->
+                            <div>
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Track Batch</h2>
+                                    <div style="margin:1em">
+                                        <form class="form">
+                                            <div class="form-group form-group-label">
+                                                <div class="row">
+                                                    <div class="col-md-10 col-md-push-1">
+                                                        <label class="floating-label" for="transrmid">Rawmeat ID</label>
+                                                        <input class="form-control" id="transrmid" data-bind="value: vp02homeModel.transrmid" required type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group align-center">
+                                                <div class="form-group-btn col-md-push-1">
+                                                    <button class="btn btn-blue waves-button waves-light waves-effect" type="button" data-bind="events : { click: vp02homeModel.showTransaction }"><span class="icon icon-search icon-lg"></span>Get History</button>
+                                                    <button class="btn waves-button waves-effect" type="reset">Cancel </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row" id="rmdiagramsection">
+                                        <div class="col-lg-12 col-sm-12">
+                                            <h2 class="content-sub-heading">Transaction Information</h2>
+                                            <div class="card">
+                                                <div class="card-main">
+                                                    <div class="card-inner">
+                                                        <div style="margin:1em">
+                                                            <div id="rmdiagram" style="height:500px"></div>
+                                                            <div id="blockwindow"></div>
+                                                            <div class="fbtn-container" style="right:60px;bottom:200px;">
+                                                                <div class="fbtn-inner">
+                                                                    <div class='my-legend'>
+                                                                        <div class='legend-title'>Legends</div>
+                                                                        <div class='legend-scale'>
+                                                                            <ul class='legend-labels'>
+                                                                                <li><span style='background:#2196f3;'></span>Livestock Creation</li>
+                                                                                <li><span style='background:#8700ff;'></span>Lot Creation</li>
+                                                                                <li><span style='background:#00e68a;'></span>Inventory Transfer</li>
+                                                                                <li><span style='background:#f44336;'></span>Rawmeat Creation</li>
+                                                                                <li><span style='background:#ffaa00;'></span>Rawmeat Lot Creation</li>
+                                                                                <li><span style='background:#e600e6;'></span>Package Creation</li>
+                                                                                <li><span style='background:#1e4c96;'></span>Retailer</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <!--<div class='legend-source'>Source: <a href="#link to source">Name of source</a></div>-->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .k-tabstrip-items {
+        background-image: none,linear-gradient(to bottom,#f44336 0,#fafafa 100%);
+    }
+
+    .tile-collapse.active {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .k-dialog .k-dialog-buttongroup.k-dialog-button-layout-stretched li.k-button:first-child {
+        width: 49%;
+        border-style: none
+    }
+    #rmtreeview .k-checkbox{
+       opacity:0
+    }
+
+     #rmbatchtreeview .k-checkbox{
+       opacity:0
+    }
+
+    .query-match {
+        color: red;
+    }
+    .select-all-wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .selected-count {
+        float: right;
+        color: #aaa;
+    } 
+    .selectedName {
+        padding: 5px 10px;
+        background: #aaa;
+        color: white;
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+
+    #selectbatch {
+        padding-bottom: 15px;
+    }
+
+    #selectbatch:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+</style>
+
+
+<script id="cattlecatalogTemplate" type="text/x-kendo-template">
+    <div class="tile">
+        <div class="tile-inner">
+            Click each cattle to review
+        </div>
+    </div>
+
+    # var count= 0; for(var i = 0 ;i < cattle.length; i++){ #
+    #  for(var j = 0 ; j < cattle[i].cattle.length; j++){ var current = count++; #
+    <div class="tile tile-collapse tile-collapse-full">
+        <div class="tile-toggle" data-parent=".content" data-target="\#tile-collapse-${current}" data-toggle="tile">
+            <div class="pull-left tile-side">
+                <div class="avatar avatar-red avatar-sm">
+                    <span class="icon icon-label"></span>
+                </div>
+            </div>
+            <div class="tile-inner">
+                <div class="text-overflow">Livestock Tag - ${cattle[i].cattle[j].cattletag}, recieved from ${cattle[i].transferdetail.from} on ${cattle[i].transferdetail.date}</div>
+            </div>
+        </div>
+        <div class="tile-active-show tile-active-show-still collapse" id="tile-collapse-${current}">
+            <div class="tile-sub">
+                <p>
+                    <strong>Herd Mark Id : </strong> ${cattle[i].cattle[j].cattleid} <br />
+                    <strong>Species : </strong> ${cattle[i].cattle[j].species}<br />
+                    <strong>Livestock Type : </strong> ${cattle[i].cattle[j].cattletype}<br />
+                    <strong>Birthdate : </strong> ${cattle[i].cattle[j].birthdate}<br />
+                    <strong>Weight : </strong> ${cattle[i].cattle[j].weight} pounds<br />
+                    <strong>Status : </strong> ${cattle[i].cattle[j].status}<br />
+                    <strong>Certificate : </strong> ${cattle[i].cattle[j].certificate}
+            </div>
+            <div class="tile-footer">
+                <ul class="nav nav-list pull-left">
+                    <li>
+                        <a data-dismiss="tile"  href="javascript:void(0)"><span class="icon icon-check"></span>&nbsp;Finalize Review</a>
+                    </li>
+                    <li>
+                        <a data-dismiss="tile" href="javascript:void(0)"><span class="icon icon-close"></span>&nbsp;Cancel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    # } #
+    # } #
+</script>
+
+<script id="tysoninventoryTemplate" type="text/x-kendo-template">
+
+    <table width="50%" align="center" class="km-nova">
+        <tr>
+            <td align="center" data-badge=""><b>Livestock Inventory</b> <div id="counter" class="text-center pulse"><a><span class="count">${cattleinventory}</span></a></div></td>
+            <td align="center" data-badge=""><b>Rawmeat Inventory</b> <div id="counter2" class="text-center pulse"><a><span class="count">${rawmeatinventory}</span></a></div></td>
+            <td align="center" data-badge=""><b>Transfered Rawmeat</b> <div id="counter3" class="text-center pulse"><a><span class="count">${transferinventory}</span></a></div></td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+    </table>
+   
+</script>
+
+<script id="cattleTemplate" type="text/x-kendo-template">
+    <div class="card">
+        <a data-role="button" class="card-side card-side-right" data-bind="events :{click : vp02homeModel.closecatteinfo}"><span class="card-heading icon icon-close"></span></a>
+        <div class="card-main">
+            <div class="card-inner">
+                <h2 class="card-heading">${species} - ${cattletype}</h2>
+                <p>
+                    <strong>Cattle Id : </strong> ${cattleid} <br />
+                    <strong>Cattle Tag : </strong> ${cattletag}<br />
+                    <strong>Birthdate : </strong> ${birthdate}<br />
+                    <strong>Weight : </strong> ${weight} pounds<br />
+                    <strong>Status : </strong> ${status}<br />
+                    <strong>Certificate : </strong> ${cattle[i].certificate}
+                </p>
+            </div>
+            <div class="card-action">
+                <ul class="nav nav-list pull-left">
+                    <li>
+                        <a href="javascript:void(0)" data-dismiss="tile" ><span class="icon icon-check text-blue"></span>&nbsp;<span class="text-blue">Review</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="tysonweighttemplate">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>\#</th>
+                    <th>Raw Meat Id</th>
+                    <th>Weight</th>
+                    <th>Expire Date</th>
+                    <th>Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                # for(var i= 0;i< data.length ;i ++){ #
+                <tr>
+                    <td>${data[i].id}</td>
+                    <td><input class="form-control" id="rmid-${data[i].id}" value="RMID${data[i].rmid}" style="width:100px" type="text" disabled /></td>
+                    <td><input id="rmweight-${data[i].id}" style="width:150px" type="text" /></td>
+                    <td><input id="rmdate-${data[i].id}"  style="width:150px" type="text"></td>
+                    <td><input id="rmtemp-${data[i].id}" style="width:100px" type="text"></td>
+                </tr>
+                # } #
+            </tbody>
+        </table>
+    </div>
+</script>
+
+<script id="rmbatchTemplate" type="text/x-kendo-template">
+    <div class="tile">
+        <div class="tile-inner">
+            Click Lot Number to view Livestock Details
+        </div>
+    </div>
+
+    # for(var i = 0 ;i < batchdetail.length; i++){ #
+    <div class="tile tile-collapse tile-collapse-full">
+        <div class="tile-toggle" data-parent=".content" data-target="\#livestockbatch-collapse-${i}" data-toggle="tile">
+            <div class="pull-left tile-side">
+                <div class="avatar avatar-red avatar-sm">
+                    <span class="icon icon-label"></span>
+                </div>
+            </div>
+            <div class="tile-inner">
+                <div class="text-overflow">Lot ID - ${batchdetail[i].batchdetail.batchid}</div>
+            </div>
+        </div>
+        <div class="tile-active-show tile-active-show-still collapse" id="livestockbatch-collapse-${i}">
+            <div class="tile-sub">
+                <p>
+                    <strong>Lot ID : </strong> ${batchdetail[i].batchdetail.batchid}<br />
+                    <strong>Batch date: </strong> ${batchdetail[i].batchdetail.batchdate} <br />
+                    <strong>Source : </strong> ${batchdetail[i].batchdetail.source}<br />
+                    <strong>Livestock List :</strong> <br />
+                    # var tags = batchdetail[i].batchdetail.taglist.split(",");  #
+                    # for (var j=0 ;j < tags.length ;j++){#
+                    <i>${tags[j]}</i>
+                    # } #
+            </div>
+            <div class="tile-footer">
+                <ul class="nav nav-list pull-left">
+                    <li>
+                        <a data-dismiss="tile" href="javascript:void(0)"><span class="icon icon-close"></span>&nbsp;Close</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    # } #
+</script>

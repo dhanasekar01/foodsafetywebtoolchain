@@ -1,0 +1,108 @@
+﻿<div data-role="view" data-title="Create Cattle" data-layout="main-nonav" data-show="app.createcattle.onShow" data-after-show="app.createcattle.afterShow" data-model="app.createcattle" id="createcattleScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span>Farmer Console</span>
+            <a data-role="backbutton" data-align="left">Back</a>
+        </div>
+    </header>
+    <div class="content">
+        
+        <div class="content-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-sm-12">
+
+                        <h2 class="content-sub-heading">Search Cattle </h2>
+
+                        <div class="card-wrap">
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-main">
+                                            <div class="card-inner">
+                                                <form class="form">
+                                                    <div class="form-group form-group-label">
+                                                        <div class="row">
+                                                            <div class="col-md-10 col-md-push-1">
+                                                                <label class="floating-label" for="cattletagid">Cattle Tag ID</label>
+                                                                <input class="form-control" id="cattletagid" data-bind="value: cattleModel.cattleTagid" required type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group align-center">
+                                                        <div class="form-group-btn col-md-push-1">
+                                                            <button class="btn btn-blue waves-button waves-light waves-effect" type="button" data-bind="events : { click: cattleModel.getcattle }"><span class="icon icon-search icon-lg"></span>Get Cattle</button>
+                                                            <button class="btn waves-button waves-effect" type="reset">Cancel </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="cattleTemplate" type="text/x-kendo-template">
+    <!--
+        
+cattleId
+:
+"101"
+cattleTag
+:
+"TAG01"
+description
+:
+"JERSEY"
+farmerId
+:
+"SHASHANK"
+weight
+:
+300
+        -->
+    <div class="card">
+		<aside class="card-side card-side-right">
+            <a data-role="button"><span class="card-heading icon icon-close"></span></a>
+		</aside>
+		<div class="card-main">
+			<div class="card-inner">
+				<p class="card-heading">Primary Area!</p>
+				<p>
+					Lorem ipsum dolor sit amet.<br>
+					Consectetur adipiscing elit.
+				</p>
+			</div>
+			<div class="card-action">
+				<ul class="nav nav-list pull-left">
+					<li>
+						<a href="javascript:void(0)"><span class="icon icon-check text-blue"></span>&nbsp;<span class="text-blue">OK</span></a>
+					</li>
+				</ul>
+				<ul class="nav nav-list pull-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown"><span class="access-hide">More</span><span class="icon icon-keyboard-arrow-down"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="javascript:void(0)"><span class="icon icon-filter-1 margin-right-half"></span>&nbsp;Lorem Ipsum</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"><span class="icon icon-filter-2 margin-right-half"></span>&nbsp;Consectetur Adipiscing</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"><span class="icon icon-filter-3 margin-right-half"></span>&nbsp;Sed Ornare</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</script>

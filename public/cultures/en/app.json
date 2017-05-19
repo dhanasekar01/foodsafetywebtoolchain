@@ -1,0 +1,91 @@
+{
+  "_app": {
+    "navigationMore": "More",
+    "showMoreTitle": "Show More",
+    "qrCodeScan": "Scan"
+  },
+  "home": {
+    "title": "Welcome to Project X",
+    "homeModel": {
+      "logoutLabel": "Sign Out",
+      "emailLabel": "Infy Id",
+      "passwordLabel": "Password",
+      "signinLabel": "Sign In",
+      "gotoRegisterLabel": "Register",
+      "remembermeLabel": "Remember Me",
+      "registerEmailLabel": "Email",
+      "registerPasswordLabel": "Password",
+      "registerNameLabel": "Nickname",
+      "registerLabel": "Register",
+      "gotoSigninLabel": "Sign In",
+      "confirmregisterPasswordLabel": "Confirm Password",
+      "registerquestion": "I am a ",
+      "locateLabel": "Location",
+      "ContactPhoneLabel": "Contact Phone",
+      "ContactPersonLabel": "Contact Person",
+      "NameOfTheCompanyLabel":"Company Name",
+      "CompanyIdLabel":"Company Id",
+      "TypeLabel": "Type",
+      "customer": "Customer",
+      "corporate": "Employee",
+      "vendor": "Vendor",
+      "continueGuest": "Continue as Guest"
+    }
+  },
+  "about": {
+    "title": "About"
+  },
+  "guest": {
+    "title": "Guest"
+  },
+  "menu": {
+    "title": "Menu"
+  },
+  "profile": {
+    "title": "Profile"
+  },
+  "vndorder": {
+    "title": "Vendor Order"
+  },
+  "fco": {
+    "title": "FC Operation"
+  },
+  "checkout": {
+    "title": "Checkout"
+  },
+  "myorders": {
+    "title": "My Orders"
+  },
+  "cust": {
+    "title": "Customer Console"
+  },
+  "restaurant": {
+    "title": "Restaruant",
+    "status": "Availability",
+    "pendingOrder": "Waiting Order"
+  },
+  "vndRestaurant": {
+    "title": "Vendor Restaruant"
+  },
+  "admHome": {
+    "title": "Admin Home",
+    "pending_action": "Pending Actions"
+  },
+  "vndHome": {
+    "title": "Vendor Home",
+    "pending_action": "Pending Actions",
+    "vndModel": {
+      "available" :  "Note: If it is checked, you will avaiable for next 15 minutes"
+    }
+  },
+  "admMaster": {
+    "title": "Admin Master",
+    "admMasterModel": {
+      "submitButton": "Confirm",
+      "cancelButton": "Cancel"
+    }
+  },
+  "foodCourt": {
+    "title": "Food Court"
+  }
+}

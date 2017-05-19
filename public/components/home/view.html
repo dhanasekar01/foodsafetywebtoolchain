@@ -1,0 +1,67 @@
+<div data-role="view" data-title="Home"  data-layout="main-nonav" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow" id="homeScreen" class="screen">
+    <header class="header">
+        <span class="header-logo">Food Safety</span>
+    </header>
+    <div class="content">
+        <div class="content-heading">
+        </div>
+        <div class="content-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-push-7 col-md-push-7 col-md-5 col-sm-5 col-sm-push-7">
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-main">
+                                    <div class="card-header">
+                                        <div class="card-inner">
+                                            <h1 class="card-heading">Login</h1>
+                                        </div>
+                                    </div>
+                                    <div class="card-inner">
+                                        <p class="text-center">
+                                            <span class="avatar avatar-inline avatar-lg">
+                                                <img alt="Login" src="Material/images/users/avatar-001.jpg">
+                                            </span>
+                                        </p>
+                                        <form class="form">
+                                            <div class="form-group form-group-label">
+                                                <div class="row">
+                                                    <div class="col-md-10 col-md-push-1">
+                                                        <label class="floating-label" for="login-username">Username</label>
+                                                        <input class="form-control" id="login-username" data-bind="value: homeModel.username" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-label">
+                                                <div class="row">
+                                                    <div class="col-md-10 col-md-push-1">
+                                                        <label class="floating-label" for="login-password">Password</label>
+                                                        <input class="form-control" id="login-password" data-bind="value: homeModel.password" type="password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-10 col-md-push-1">
+                                                        <button data-bind="events: {click : homeModel.signin}" type="button" class="btn btn-block btn-blue waves-button waves-effect waves-light">Sign In</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

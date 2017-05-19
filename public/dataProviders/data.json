@@ -1,0 +1,860 @@
+﻿{
+
+}
+{
+    "Carnival and Clay Oven": [
+        {
+            "SNo": "1",
+            "SubCategory": "Breakfast",
+            "Items": "Combo - A",
+            "Quantity": "1Idly(50gms)+1Vada(40gms)+Pongal(150gms) +80ml Chutney+100ml Sambar ",
+            "Approved": "33"
+        },
+        {
+            "SNo": "2",
+            "SubCategory": "Breakfast",
+            "Items": "Combo - B",
+            "Quantity": "1 Mini-Masala Dosa(25gms)+1Vada(40ms)+Pongal(150gms)+Chutney (80ml)+Sambar (100ml)",
+            "Approved": "33"
+        },
+        {
+            "SNo": "3",
+            "SubCategory": "Breakfast",
+            "Items": "Combo - C",
+            "Quantity": "1Poori&Bhaji(40gms)+ 1Vada(40ms) +Pongal(150gms) +Chutney (80ml) + Sambar (100ml)",
+            "Approved": "33"
+        },
+        {
+            "SNo": "4",
+            "SubCategory": "Breakfast",
+            "Items": "Idiyappam",
+            "Quantity": "Idiyappam 4 nos + Kadala Curry(150 gms) / Coconut Milk (150 ml) /  Vada Curry (150 gms)",
+            "Approved": "30"
+        },
+        {
+            "SNo": "5",
+            "SubCategory": "Breakfast",
+            "Items": "Idly 1 Nos",
+            "Quantity": "1 nos Idly*50gms",
+            "Approved": "8"
+        },
+        {
+            "SNo": "6",
+            "SubCategory": "Breakfast",
+            "Items": "Idly 2 Nos",
+            "Quantity": "2 nos Idly*50gms + Chutney (80ml) + Sambar (100ml)",
+            "Approved": "18"
+        },
+        {
+            "SNo": "7",
+            "SubCategory": "Breakfast",
+            "Items": "Idly 3 Nos",
+            "Quantity": "3 nos Idly*50gms + Chutney (80ml) + Sambar (100ml)",
+            "Approved": "26"
+        },
+        {
+            "SNo": "8",
+            "SubCategory": "Breakfast",
+            "Items": "Vada 1 Nos (Breakfast)",
+            "Quantity": "1nos*40gms",
+            "Approved": "10"
+        },
+        {
+            "SNo": "9",
+            "SubCategory": "Breakfast",
+            "Items": "Vada 2 Nos (Breakfast)",
+            "Quantity": "2nos*40gms + Chutney (80ml) + Sambar (100ml)",
+            "Approved": "24"
+        },
+        {
+            "SNo": "10",
+            "SubCategory": "Breakfast",
+            "Items": "Idly 1 no. + 1 Vada ",
+            "Quantity": "1 nos Idly*50gms + 1 Vada (40gms)+Chutney (80ml) + Sambar (100ml)",
+            "Approved": "20"
+        },
+        {
+            "SNo": "11",
+            "SubCategory": "Breakfast",
+            "Items": "Idly 2 no. +  1 Vada ",
+            "Quantity": "2 nos Idly*50gms + 1 Vada (40gms)+Chutney (80ml) + Sambar (100ml)",
+            "Approved": "27"
+        },
+        {
+            "SNo": "12",
+            "SubCategory": "Breakfast",
+            "Items": "Idly 3 no. +  1 Vada ",
+            "Quantity": "3 nos Idly*50gms + 1 Vada (40gms)+Chutney (80ml) + Sambar (100ml)",
+            "Approved": "36"
+        },
+        {
+            "SNo": "13",
+            "SubCategory": "Breakfast",
+            "Items": "Pongal(Regular)",
+            "Quantity": "(250 gms)Pongal  + Chutney (80ml) + Sambar (100ml)",
+            "Approved": "25"
+        },
+        {
+            "SNo": "14",
+            "SubCategory": "Breakfast",
+            "Items": "Pongal Large",
+            "Quantity": "(400 gms)Pongal  + Chutney (80ml) + Sambar (100ml)",
+            "Approved": "29"
+        },
+        {
+            "SNo": "15",
+            "SubCategory": "Breakfast",
+            "Items": "Pongal + Vada",
+            "Quantity": "(250 gms) Pongal + 1 Vada (40 gms)  +Chutney (80ml) + Sambar (100ml)",
+            "Approved": "35"
+        },
+        {
+            "SNo": "16",
+            "SubCategory": "Breakfast",
+            "Items": "Rava uppma(Regular)",
+            "Quantity": "250 gms  +Chutney (80ml) + Sambar (100ml)",
+            "Approved": "20"
+        },
+        {
+            "SNo": "17",
+            "SubCategory": "Breakfast",
+            "Items": "Rava uppma + Vada",
+            "Quantity": "250 gms + Vada (1nos*40gms) +Chutney (80ml) + Sambar (100ml)",
+            "Approved": "30"
+        },
+        {
+            "SNo": "18",
+            "SubCategory": "Breakfast",
+            "Items": "Rava uppma(Large)",
+            "Quantity": "400 gms  +Chutney (80ml) + Sambar (100ml)",
+            "Approved": "24"
+        },
+        {
+            "SNo": "19",
+            "SubCategory": "Breakfast",
+            "Items": "Semiya Kitchadi(Regular)",
+            "Quantity": "250 gms  +Chutney (80ml) + Sambar (100ml)",
+            "Approved": "20"
+        },
+        {
+            "SNo": "20",
+            "SubCategory": "Breakfast",
+            "Items": "Semiya Kitchadi + Vada",
+            "Quantity": "250 gms + Vada (1nos*40gms) +Chutney (80ml) + Sambar (100ml)",
+            "Approved": "30"
+        },
+        {
+            "SNo": "21",
+            "SubCategory": "Breakfast",
+            "Items": "Semiya Kitchadi(Large)",
+            "Quantity": "400 gms  +Chutney (80ml) + Sambar (100ml)",
+            "Approved": "24"
+        },
+        {
+            "SNo": "22",
+            "SubCategory": "Breakfast",
+            "Items": "Poori(3 Nos)",
+            "Quantity": "3nos*40gms + Channa Masala(100ml) or  3nos* 40gms + Aloo masala (100ml)",
+            "Approved": "27"
+        },
+        {
+            "SNo": "23",
+            "SubCategory": "Breakfast",
+            "Items": "Poori(4 Nos)",
+            "Quantity": "4nos*40gms + Channa Masala(150ml) or  4nos* 40gms + Aloo masala (150ml)",
+            "Approved": "37"
+        },
+        {
+            "SNo": "24",
+            "SubCategory": "Breakfast",
+            "Items": "Plain Paratha ",
+            "Quantity": "2*120gms + (100gms) Subji",
+            "Approved": "27"
+        },
+        {
+            "SNo": "25",
+            "SubCategory": "Breakfast",
+            "Items": "Sevai (Lemon/Tomato)",
+            "Quantity": "250 gms ",
+            "Approved": "18"
+        },
+        {
+            "SNo": "26",
+            "SubCategory": "Breakfast",
+            "Items": "Puttu",
+            "Quantity": "Puttu 200 gms + Kadalacurry(150ml)",
+            "Approved": "28"
+        },
+        {
+            "SNo": "27",
+            "SubCategory": "Breakfast",
+            "Items": "Sambar Vada / Curd Vada",
+            "Quantity": "Vada (2nos*100gms) + Onion/Carrot/Boondi Toppings",
+            "Approved": "30"
+        },
+        {
+            "SNo": "28",
+            "SubCategory": "Breakfast",
+            "Items": "Plain Dosa",
+            "Quantity": "2 Chutney  + Sambar (100ml)",
+            "Approved": "23"
+        },
+        {
+            "SNo": "29",
+            "SubCategory": "Dosa",
+            "Items": "Masala Dosa, Kal Dosa, Onion Dosa, Podi Masala, Podi Onion Dosa, Pesarattu, Podi Uthappam, Tomato Uthappam, Onion Pesarattu,Set Dosa,Veg Oothappam,Onion Othappam, Rava Dosa, Ghee Podi Dosa",
+            "Quantity": "2 Chutney  + Sambar (100ml)",
+            "Approved": "30"
+        },
+        {
+            "SNo": "30",
+            "SubCategory": "Dosa",
+            "Items": "Mysore Masala Dosa,Onion Masala Dosa,Podi Onion Masala Dosa,   Onion Rava / Rava Masala, Ghee Karam Dosa, Set Dosa Vada Curry",
+            "Quantity": "Masala(100gms)  + 2 Chutney  + Sambar (100ml)",
+            "Approved": "34"
+        },
+        {
+            "SNo": "31",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Chapathi with kurma",
+            "Quantity": "Chappathi 3 no + 150 ml veg kurma",
+            "Approved": "43"
+        },
+        {
+            "SNo": "32",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Variety Rice",
+            "Quantity": "Sambar Rice/ any other variety rice (250gms) + pappad",
+            "Approved": "33"
+        },
+        {
+            "SNo": "33",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Curd Rice",
+            "Quantity": "Curd Rice only ( 250 gms ) + Fryams / More Milagai",
+            "Approved": "24"
+        },
+        {
+            "SNo": "34",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Curd Rice + Poriyal",
+            "Quantity": "Rice 250gms + Poriyal 100 gms + Fryams / More Milagai",
+            "Approved": "30"
+        },
+        {
+            "SNo": "35",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "South Combo",
+            "Quantity": "Sambar Rice or Variety Rice (200gms) + Curd Rice (200gms) + Sweet(100gms) + Poriyal (100gms)+ Fryums",
+            "Approved": "43"
+        },
+        {
+            "SNo": "36",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "South Indian Meals",
+            "Quantity": "Rice(250gms) + Appalam+ Pickle + With any 4 Katories (each 100gms)",
+            "Approved": "48"
+        },
+        {
+            "SNo": "37",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Special North Indian Combo",
+            "Quantity": "Bread (2nos)+Paneer Gravy (100ml)+Dry Item (1no) 100ml + Dhal (100ml)+Pulao or Basmathi Rice ( 150ml)",
+            "Approved": "52"
+        },
+        {
+            "SNo": "38",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Veg  Biriyani",
+            "Quantity": "Biriyani(300gms) + Raitha(100ml) ",
+            "Approved": "46"
+        },
+        {
+            "SNo": "39",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Egg Biriyani ",
+            "Quantity": "Biriyani(300gms) +Egg (1nos) + Raitha(100ml)+Gravy (100ml)",
+            "Approved": "50"
+        },
+        {
+            "SNo": "40",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Chicken Biriyani",
+            "Quantity": "(120gms of Meat + Biryani Rice)in 350gms bowl+ Raitha(100ml)+Egg(1nos)+ Gravy(100ml)",
+            "Approved": "80"
+        },
+        {
+            "SNo": "41",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Kal Dosa With Chicken",
+            "Quantity": "2 no dosai + 250 gms (100gChicken +150mlGravy)",
+            "Approved": "50"
+        },
+        {
+            "SNo": "42",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Steamed Rice with Chicken",
+            "Quantity": "Rice 250gms + 250ml Chicken Gravy(100gmchicken in it)+100ml Thick Buttermilk/Rasam+salad",
+            "Approved": "60"
+        },
+        {
+            "SNo": "43",
+            "SubCategory": "Lunch/Dinner",
+            "Items": "Steamed Rice with Fish",
+            "Quantity": "Rice 250gms + 2 Nos Fish + 200ml Fish Gravy+100ml Thick Buttermilk/Rasam+salad",
+            "Approved": "62"
+        },
+        {
+            "SNo": "44",
+            "SubCategory": "Extras",
+            "Items": "Extra Katorie",
+            "Quantity": "100ml",
+            "Approved": "7"
+        },
+        {
+            "SNo": "45",
+            "SubCategory": "Extras",
+            "Items": "Extra Paratha",
+            "Quantity": "1nos*75gms",
+            "Approved": "8"
+        },
+        {
+            "SNo": "46",
+            "SubCategory": "Extras",
+            "Items": "Extra Poori",
+            "Quantity": "1 nos* 40gms",
+            "Approved": "7"
+        },
+        {
+            "SNo": "47",
+            "SubCategory": "Extras",
+            "Items": "Extra Chappathi / Pulka",
+            "Quantity": "1nos*60gms",
+            "Approved": "8"
+        },
+        {
+            "SNo": "48",
+            "SubCategory": "Extras",
+            "Items": "Kal Dosa",
+            "Quantity": "1 No",
+            "Approved": "12"
+        },
+        {
+            "SNo": "49",
+            "SubCategory": "Extras",
+            "Items": "Boiled Egg",
+            "Quantity": "1 no",
+            "Approved": "7"
+        },
+        {
+            "SNo": "50",
+            "SubCategory": "Extras",
+            "Items": "Extra Pav",
+            "Quantity": "1 no",
+            "Approved": "5"
+        },
+        {
+            "SNo": "51",
+            "SubCategory": "Extras",
+            "Items": "Set Curd",
+            "Quantity": "100ml",
+            "Approved": "10"
+        },
+        {
+            "SNo": "52",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Bombay Puri,Channa Bhel,\r\nChanna Cutlet,Channa Kachori\r\nChanna Samosa,Dahi Chat\r\nDahi Kachorie,Dahi Papadi Chat\r\nDahi Puri,Dahi Samosa,Masala Poori,Mix Chat,,Sev Puri, Pappadi Chat ,Samosa Chat",
+            "Quantity": "200 Gms",
+            "Approved": "27"
+        },
+        {
+            "SNo": "53",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Aloo papdi chat , bhel puri ,Channa Masala,Garam Aloo Chat,Kachori ",
+            "Quantity": "200 gms ",
+            "Approved": "20"
+        },
+        {
+            "SNo": "54",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Cutlet /Samoso",
+            "Quantity": "1nos* 40 gms + Sauce (60ml) ",
+            "Approved": "10"
+        },
+        {
+            "SNo": "55",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Pani Poori",
+            "Quantity": "Minimum 4 nos per plate -any additional pori cost @Rs.2",
+            "Approved": "10"
+        },
+        {
+            "SNo": "56",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Kachoori",
+            "Quantity": "1 Nos",
+            "Approved": "10"
+        },
+        {
+            "SNo": "57",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Mini Masala Vada/ Bajji / Aloo Bonda ##",
+            "Quantity": "2 Nos * 60gms",
+            "Approved": "10"
+        },
+        {
+            "SNo": "58",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Sambar Vada ##",
+            "Quantity": "1 Nos (in 100 ml bowl with sambar) - 190 gms",
+            "Approved": "15"
+        },
+        {
+            "SNo": "59",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Sundal ##",
+            "Quantity": "in 100 ml bowl",
+            "Approved": "10"
+        },
+        {
+            "SNo": "60",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Vada (Evening Snacks) ##",
+            "Quantity": "1 nos (40 gms)",
+            "Approved": "10"
+        },
+        {
+            "SNo": "61",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Pav Bhajji",
+            "Quantity": "3 nos",
+            "Approved": "20"
+        },
+        {
+            "SNo": "62",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Pakoda (Gobi/Onion/Mix-Veg) ##",
+            "Quantity": "75 gms",
+            "Approved": "10"
+        },
+        {
+            "SNo": "63",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Mysore Bonda ##",
+            "Quantity": "1 Nos * 50 gms",
+            "Approved": "10"
+        },
+        {
+            "SNo": "64",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Kara Panayaram/ Sweet Panayaram/ Sweet suyyam/Kuli Panayaram ##",
+            "Quantity": "2nos * 40 gms",
+            "Approved": "10"
+        },
+        {
+            "SNo": "65",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Special Sweet",
+            "Quantity": "1 No",
+            "Approved": "18"
+        },
+        {
+            "SNo": "66",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Poornam Kozhukkatai",
+            "Quantity": "1 No - 150 gms",
+            "Approved": "25"
+        },
+        {
+            "SNo": "67",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Chetinad Kozhukkatai",
+            "Quantity": "1 No - 150 gms",
+            "Approved": "20"
+        },
+        {
+            "SNo": "68",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Sweet Poli",
+            "Quantity": "1 No * 60 gms",
+            "Approved": "15"
+        },
+        {
+            "SNo": "69",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Veg Cripsy Roll",
+            "Quantity": "1 No * 60 gms",
+            "Approved": "22"
+        },
+        {
+            "SNo": "70",
+            "SubCategory": "Chats & Snacks",
+            "Items": "Veg Franky",
+            "Quantity": "1 No * 60 gms",
+            "Approved": "22"
+        },
+        {
+            "SNo": "71",
+            "SubCategory": "Breads with Veg Gravy",
+            "Items": "Chappathi / Paratha / Pulka with Gravy",
+            "Quantity": "Chapathi(3*50gms) / Paratha(2*75gms) / Pulka (5*30gms) + Veg Gravy(150ml)",
+            "Approved": "47"
+        },
+        {
+            "SNo": "72",
+            "SubCategory": "Breads with Veg Gravy",
+            "Items": "Chappathi / Paratha / Pulka with  Veg Special gravy",
+            "Quantity": "Chapathi(3*50gms) / Paratha(2*75gms) / Pulka (5*30gms) +Veg Special Gravy(150ml)",
+            "Approved": "55"
+        },
+        {
+            "SNo": "73",
+            "SubCategory": "Breads with Veg Gravy",
+            "Items": "Roti/Naan/Romali Roti/Kulcha + Veg Regular gravy",
+            "Quantity": "Roti/Naan/Romali Roti(2*80gms) + Veg gravy(150ml)",
+            "Approved": "50"
+        },
+        {
+            "SNo": "74",
+            "SubCategory": "Breads with Veg Gravy",
+            "Items": "Roti/Naan/Romali Roti/Kulcha + Veg Special gravy",
+            "Quantity": "Roti/Naan/Romali Roti(2*80gms) +Special Gravy(150ml)",
+            "Approved": "56"
+        },
+        {
+            "SNo": "75",
+            "SubCategory": "Breads with Veg Gravy",
+            "Items": "Butter - Roti/Naan/Romali Roti/Kulcha + Veg regular gravy",
+            "Quantity": "Butter-Roti/Naan/Romali Roti(2*80gms) + Veg gravy(150ml)",
+            "Approved": "55"
+        },
+        {
+            "SNo": "76",
+            "SubCategory": "Breads with Veg Gravy",
+            "Items": "Butter - Roti/Naan/Romali Roti/Kulcha +  Veg Special gravy",
+            "Quantity": "Butter-Roti/Naan/Romali Roti(2*80gms) +Special Gravy(150ml)",
+            "Approved": "62"
+        },
+        {
+            "SNo": "77",
+            "SubCategory": "Stuffed Items",
+            "Items": "Stuffed Paratha",
+            "Quantity": "2nos*120gms + Veg Gravy(150ml)",
+            "Approved": "47"
+        },
+        {
+            "SNo": "78",
+            "SubCategory": "Stuffed Items",
+            "Items": "Stuffed Paratha",
+            "Quantity": "2nos*120gms + Veg Special Gravy(150ml)",
+            "Approved": "52"
+        },
+        {
+            "SNo": "79",
+            "SubCategory": "Stuffed Items",
+            "Items": "Plain Paratha",
+            "Quantity": "2nos*120gms + Subji(100ml)",
+            "Approved": "27"
+        },
+        {
+            "SNo": "80",
+            "SubCategory": "Stuffed Items",
+            "Items": "Aloo/Gobi/Mix Veg Paratha",
+            "Quantity": "1nos*120gms + Curd(100ml)",
+            "Approved": "29"
+        },
+        {
+            "SNo": "81",
+            "SubCategory": "Egg Curry",
+            "Items": "Chappathi / Paratha / Pulka with Egg Gravy",
+            "Quantity": "Chapathi(3*50gms) / Paratha(2*75gms) / Pulka (5*30gms) + 2nos Egg Gravy(150ml)",
+            "Approved": "50"
+        },
+        {
+            "SNo": "82",
+            "SubCategory": "Egg Curry",
+            "Items": "Roti / Naan with Egg Curry",
+            "Quantity": "2nos*80gms + Egg 2nos*150ml Gravy",
+            "Approved": "56"
+        },
+        {
+            "SNo": "83",
+            "SubCategory": "Egg Curry",
+            "Items": "Butter Roti / Naan with Egg Curry",
+            "Quantity": "2nos*80gms + Egg 2nos*150ml Gravy",
+            "Approved": "58"
+        },
+        {
+            "SNo": "84",
+            "SubCategory": "Chicken Curry",
+            "Items": "Chappathi / Paratha / Pulka with Chicken Gravy",
+            "Quantity": "Chapathi(3*50gms) + Paratha(2*75gms) + Pulka (5*30gms) +Chicken Gravy(150ml)",
+            "Approved": "64"
+        },
+        {
+            "SNo": "85",
+            "SubCategory": "Chicken Curry",
+            "Items": "Roti/Naan/Romali Roti/Kulcha + Chicken gravy",
+            "Quantity": "Roti/Naan/Romali Roti(2*80gms) + Chicken Gravy(150ml)",
+            "Approved": "68"
+        },
+        {
+            "SNo": "86",
+            "SubCategory": "Chicken Curry",
+            "Items": "Butter - Roti/Naan/Romali Roti/Kulcha + Chicken gravy",
+            "Quantity": "Butter-Roti/Naan/Romali Roti(2*80gms) + Chicken Gravy(150ml)",
+            "Approved": "72"
+        },
+        {
+            "SNo": "87",
+            "SubCategory": "Rice Options",
+            "Items": "Jharkhand Kitchadi",
+            "Quantity": "300gms + Subji(100gms)",
+            "Approved": "46"
+        },
+        {
+            "SNo": "88",
+            "SubCategory": "Rice Options",
+            "Items": "Chicken Kitchadi",
+            "Quantity": "300gms + Subji(100gms)",
+            "Approved": "57"
+        },
+        {
+            "SNo": "89",
+            "SubCategory": "Rice Options",
+            "Items": "Paneer Pulao",
+            "Quantity": "Rice(300gms) + Dal(100ml) + Subji(100ml)",
+            "Approved": "53"
+        },
+        {
+            "SNo": "90",
+            "SubCategory": "Rice Options",
+            "Items": "Chicken Pulao",
+            "Quantity": "Rice(300gms) + Dal(100ml) + Subji(100ml)",
+            "Approved": "62"
+        },
+        {
+            "SNo": "91",
+            "SubCategory": "Rice Options",
+            "Items": "North Spl-1",
+            "Quantity": "Basmathi Rice(250gms)+Rajmah (150ml)+Fryms+Salad",
+            "Approved": "52"
+        },
+        {
+            "SNo": "92",
+            "SubCategory": "Rice Options",
+            "Items": "North Spl-2",
+            "Quantity": "Basmathi Rice(250gms)+Chicken Gravy (150ml)+Fryms+Salad",
+            "Approved": "65"
+        },
+        {
+            "SNo": "93",
+            "SubCategory": "Extras",
+            "Items": "Extra Chappathi / Pulka",
+            "Quantity": "1nos*50gms",
+            "Approved": "7"
+        },
+        {
+            "SNo": "94",
+            "SubCategory": "Extras",
+            "Items": "Extra Paratha",
+            "Quantity": "1nos*75gms",
+            "Approved": "8"
+        },
+        {
+            "SNo": "95",
+            "SubCategory": "Extras",
+            "Items": "Extra Naan/ Roti/ Kulcha/Romali Roti",
+            "Quantity": "1nos*80gms",
+            "Approved": "14"
+        },
+        {
+            "SNo": "96",
+            "SubCategory": "Extras",
+            "Items": "Extra Butter Naan/Butter Roti",
+            "Quantity": "1nos*80gms",
+            "Approved": "16"
+        },
+        {
+            "SNo": "97",
+            "SubCategory": "Extras",
+            "Items": "Extra Gravy",
+            "Quantity": "100ml",
+            "Approved": "9"
+        },
+        {
+            "SNo": "98",
+            "SubCategory": "Extras",
+            "Items": "Boiled Egg ",
+            "Quantity": "2nos",
+            "Approved": "14"
+        },
+        {
+            "SNo": "99",
+            "SubCategory": "Tikka",
+            "Items": "Baby Corn/Aloo Tikka ",
+            "Quantity": "5nos*20gms + Mint Chutney(50ml)",
+            "Approved": "43"
+        },
+        {
+            "SNo": "100",
+            "SubCategory": "Tikka",
+            "Items": "Paneer Tikka",
+            "Quantity": "5nos*20gms + Mint Chutney(50ml)",
+            "Approved": "48"
+        },
+        {
+            "SNo": "101",
+            "SubCategory": "Tikka",
+            "Items": "Chicken Tikka",
+            "Quantity": "5nos*30gms + Mint Chutney(50ml)",
+            "Approved": "66"
+        },
+        {
+            "SNo": "102",
+            "SubCategory": "Tikka",
+            "Items": "Chicken Malai Kabab ",
+            "Quantity": "5nos*30gms + Mint Chutney(50ml)",
+            "Approved": "65"
+        },
+        {
+            "SNo": "103",
+            "SubCategory": "Tikka",
+            "Items": "Tandoori Kabab ",
+            "Quantity": "1nos*100gms + Mint Chutney(50ml)",
+            "Approved": "42"
+        },
+        {
+            "SNo": "104",
+            "SubCategory": "Rolls",
+            "Items": "Veg Roll",
+            "Quantity": "1nos*75gms + Sauce(50ml)",
+            "Approved": "30"
+        },
+        {
+            "SNo": "105",
+            "SubCategory": "Rolls",
+            "Items": "Paneer Roll",
+            "Quantity": "1nos*75gms + Sauce(50ml)",
+            "Approved": "44"
+        },
+        {
+            "SNo": "106",
+            "SubCategory": "Rolls",
+            "Items": "Egg Roll",
+            "Quantity": "1nos*75gms / 2nos Egg + Sauce(50ml)",
+            "Approved": "38"
+        },
+        {
+            "SNo": "107",
+            "SubCategory": "Rolls",
+            "Items": "Chicken Roll",
+            "Quantity": "1nos*75gms / 1nos Egg / Chicken(50gms) + Sauce(50ml)",
+            "Approved": "47"
+        },
+        {
+            "SNo": "108",
+            "SubCategory": "Dosa's",
+            "Items": "Egg Dosa (Plain Dosa)",
+            "Quantity": "2nosEgg*150gms Dosa + 2 Chutney(50ml) + Sambar(100ml)",
+            "Approved": "35"
+        },
+        {
+            "SNo": "109",
+            "SubCategory": "Dosa's",
+            "Items": "Egg Dosa (Kal Dosa)",
+            "Quantity": "1nosEgg*150gms Dosa + 2 Chutney(50ml) + Sambar(100ml)",
+            "Approved": "25"
+        },
+        {
+            "SNo": "110",
+            "SubCategory": "Dosa's",
+            "Items": "Kadai Paneer / Veg Chettinad / Masala Omelette Dosa",
+            "Quantity": "1nos*150gms + Paneer / Veg / 2 Egg Masala(120gms)+ 2 Chutney(50ml) + Sambar(100ml)",
+            "Approved": "40"
+        },
+        {
+            "SNo": "111",
+            "SubCategory": "Dosa's",
+            "Items": "Kadai Chicken / Chettinad Chicken / (Madurai Curry Dosa with Egg)",
+            "Quantity": "1nos*150gms + Chicken Masala(120gms)+ 2 Chutney(50ml) + Sambar(100ml)",
+            "Approved": "46"
+        },
+        {
+            "SNo": "112",
+            "SubCategory": "Dosa",
+            "Items": "Plain Dosa",
+            "Quantity": "2 Chutney  + Sambar (100ml)",
+            "Approved": "23"
+        },
+        {
+            "SNo": "113",
+            "SubCategory": "Dosa",
+            "Items": "Masala Dosa, Kal Dosa, Onion Dosa, Podi Masala, Podi Onion Dosa, Pesarattu, Podi Uthappam, Tomato Uthappam, Onion Pesarattu,Set Dosa,Veg Oothappam,Onion Othappam, Rava Dosa, Ghee Podi Dosa",
+            "Quantity": "2 Chutney  + Sambar (100ml)",
+            "Approved": "30"
+        },
+        {
+            "SNo": "114",
+            "SubCategory": "Dosa",
+            "Items": "Mysore Masala Dosa,Onion Masala Dosa,Podi Onion Masala Dosa,   Onion Rava / Rava Masala, Ghee Karam Dosa, Set Dosa Vada Curry",
+            "Quantity": "Masala(100gms)  + 2 Chutney  + Sambar (100ml)",
+            "Approved": "34"
+        },
+        {
+            "SNo": "115",
+            "SubCategory": "Egg Masala",
+            "Items": "Idiyappam 4 nos",
+            "Quantity": "Idiyappam 4nos +egg masala 150ml ",
+            "Approved": "34"
+        },
+        {
+            "SNo": "116",
+            "SubCategory": "Egg Masala",
+            "Items": "Kal dosa",
+            "Quantity": "Kal dosa 2nos + egg masala 150ml ",
+            "Approved": "37"
+        },
+        {
+            "SNo": "117",
+            "SubCategory": "Egg Masala",
+            "Items": "Poori ",
+            "Quantity": "Poori 3nos egg masala 150ml",
+            "Approved": "32"
+        },
+        {
+            "SNo": "118",
+            "SubCategory": "Extras",
+            "Items": "Special Sweet",
+            "Quantity": "120gms",
+            "Approved": "18"
+        },
+        {
+            "SNo": "119",
+            "SubCategory": "Extras",
+            "Items": "Veg Pakodi ",
+            "Quantity": "veg Pakodi 250 gms",
+            "Approved": "25"
+        },
+        {
+            "SNo": "120",
+            "SubCategory": "Extras",
+            "Items": "Parcel Charge",
+            "Approved": "4"
+        },
+        {
+            "SNo": "121",
+            "SubCategory": "Extras",
+            "Items": "Punjabi Lassi",
+            "Quantity": "250ml",
+            "Approved": "22"
+        },
+        {
+            "SNo": "122",
+            "SubCategory": "Extras",
+            "Items": "Chole Bhatura",
+            "Quantity": "2nos*75gms + Channa(150ml)",
+            "Approved": "37"
+        }
+    ]
+}

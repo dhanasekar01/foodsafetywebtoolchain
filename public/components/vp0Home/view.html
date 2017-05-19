@@ -1,0 +1,672 @@
+<div data-role="view" data-title="Farmer" data-layout="main-nonav" data-model="app.vp01home" data-show="app.vp01home.onShow" data-after-show="app.vp01home.afterShow" id="vp01homeScreen" class="screen" data-reload="true">
+    <header class="header">
+        <ul class="nav nav-list pull-left">
+            <li>
+                <a class="menu-toggle" href="#menu">
+                    <span class="access-hide">Menu</span>
+                    <span class="icon icon-menu icon-lg"></span>
+                    <span class="header-close icon icon-close icon-lg"></span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo" href="index.html">Food Safety</a>
+        <ul class="nav nav-list pull-right">
+            <li>
+                <a class="menu-toggle" href="#profile">
+                    <span class="access-hide" data-bind="text : vpo01homeModel.displayname"></span>
+                    <span class="avatar avatar-sm"><img alt="" src="Material/images/users/avatar-001.jpg"></span>
+                    <span class="header-close icon icon-close icon-lg"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <nav class="menu" id="menu">
+        <div class="menu-scroll">
+            <div class="menu-wrap">
+                <div class="menu-content">
+                    <ul class="nav">
+                        <li>
+                            <a data-bind="events: {click : vp01homeModel.openconsole}">Livestock Console</a>
+                        </li>
+                        <li>
+                            <a href="#">Livestock Catalog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu menu-right" id="profile">
+        <div class="menu-scroll">
+            <div class="menu-wrap">
+                <div class="menu-top">
+                    <div class="menu-top-img">
+                        <img alt="" src="Material/images/samples/landscape.jpg">
+                    </div>
+                    <div class="menu-top-info">
+                        <a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="alt" src="Material/images/users/avatar-001.jpg"></span><span data-bind="text : vp01homeModel.displayname"></span></a>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <ul class="nav">
+                        <li>
+                            <a href="javascript:void(0)"><span class="icon icon-account-box"></span>Profile Settings</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span class="icon icon-add-to-photos"></span>Upload Certificates</a>
+                        </li>
+                        <li>
+                            <a data-bind="events:{click : vp01homeModel.logout}"><span class="icon icon-exit-to-app"></span>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+       
+        <div class="content-inner">
+            <div class="container">
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <h1 class="content-sub-heading"><span class="icon icon-verified-user"></span>Welcome <span data-bind="text : vp01homeModel.displayname"></span>!</h1>
+                        <hr />
+                        <div class="row" id="inventory">
+
+                        </div>
+
+                        <div id="tabstrip">
+                            <ul>
+                                <li id="#tab1" class="k-state-active">
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp0Home/cattle.png" />
+                                    </span> Livestock
+                                </li>
+                                <li >
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp0Home/review.png" />
+                                    </span> Review
+                                </li>
+                                <li>
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp0Home/lot.png" />
+                                    </span> Lot Creation
+                                </li>
+                                <li>
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp0Home/transfer.png" />
+                                    </span> Transfer
+                                </li>
+                                <li>
+                                    <span class="avatar avatar-sm avatar-transparent pull-left">
+                                        <img src="components/vp0Home/track.png" />
+                                    </span> Track Livestock
+                                </li>
+                            </ul>
+                            <!-- TAB ONE-->
+                            <div class="k-state-active">
+                                <div class="">
+                                    <div class="col-lg-10 col-sm-12">
+
+                                        <p class="text-center">
+                                            <span class="avatar avatar-inline avatar-green pull-left">
+                                                <img alt="" src="components/vp0Home/livestock.png">
+                                            </span><h2 class="content-sub-heading">Create Livestock</h2>
+                                        </p>
+                                        <form class="form form-inline" id="cattleform">
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="species">Species</label>
+                                                        <select id="species" class="form-control" data-bind="value: vp01homeModel.species" style="width: 100%;">
+                                                            <option>Cattle</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="cattletype">Type</label>
+                                                        <select id="cattletype" class="form-control" data-bind="value: vp01homeModel.cattletype" style="width: 100%;">
+                                                            <option>Breeding Heifer-Spring Calf</option>
+                                                            <option>Breeding Heifer-Fall Calf</option>
+                                                            <option>Breeding Heifer-Summer Yearling</option>
+                                                            <option>Breeding Heifer-Junior Yearling</option>
+                                                            <option>Breeding Heifer-Senior Yearling</option>
+                                                            <option>Cow/Calf</option>
+                                                            <option>Prospect-Market-Calves</option>
+                                                            <option>Market-Beef </option>
+                                                            <option>Dairy-Steers</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="cattleid">Herd Mark</label>
+                                                        <input class="form-control" id="cattleid" data-bind="value: vp01homeModel.cattleid" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="cattletag">Ear Tag ID</label>
+                                                        <input class="form-control" id="cattletag" data-bind="value: vp01homeModel.cattletag" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label class="floating-label" for="cattlecertificate">Certificate</label>
+                                                        <select id="cattlecertificate" class="form-control" data-bind="value: vp01homeModel.cattlecertificate" style="width: 100%;">
+                                                            <option value="QualityCertificateAF-1.pdf">Angus Beef Certificate</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-2 col-md-push-1">
+                                                        <button id="open" class="k-button" type="button">View</button>
+                                                        <div id="window">
+                                                            <object width="550" height="500" data="components/vp0Home/QualityCertificateAF-1.pdf"></object>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-4 col-md-push-1">
+                                                        <label for="cattlebirth">
+                                                            BirthDate :
+                                                            <input id="cattlebirth" data-bind="value: vp01homeModel.cattlebirth" type="text">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5 col-md-push-1">
+                                                        <label for="cattleweight">
+                                                            Weight :
+                                                            <input id="cattleweight" data-bind="value: vp01homeModel.cattleweight" type="text">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-3 col-md-push-1">
+                                                        <ul class="km-listview">
+                                                            <li>Grass Fed <input id="wink-switch" data-role="switch" class="km-accent" /></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-10 col-md-push-1">
+                                                        <div class="form-group-btn">
+                                                            <button class="btn btn-blue waves-button waves-light waves-effect" type="button" data-bind="events :{click: vp01homeModel.createCattle} "><span class="icon icon-add"></span>Create</button>
+                                                            <button class="btn waves-button waves-effect" type="reset">Cancel </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TAB TWO-->
+                            <div>
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Search Cattle </h2>
+                                    <form class="form">
+                                        <div class="form-group form-group-label">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-push-1">
+                                                    <label class="floating-label" for="cattletagid">Ear Tag ID</label>
+                                                    <input class="form-control" id="cattletagid" data-bind="value: vp01homeModel.cattleTagid" required type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group align-center">
+                                            <div class="form-group-btn col-md-push-1">
+                                                <button class="btn btn-blue waves-button waves-light waves-effect" type="button" data-bind="events : { click: vp01homeModel.getcattle }"><span class="icon icon-search icon-lg"></span>Get Cattle</button>
+                                                <button class="btn waves-button waves-effect" type="reset">Cancel </button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="row hide" id="cattlerow">
+                                        <div class="col-lg-12 col-sm-12">
+                                            <div class="el-loading cattleload">
+                                                <div class="el-loading-indicator">
+                                                    <div class="progress progress-position-absolute-bottom">
+                                                        <div class="load-bar">
+                                                            <div class="load-bar-base">
+                                                                <div class="load-bar-content">
+                                                                    <div class="load-bar-progress"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-red"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="load-bar">
+                                                            <div class="load-bar-base">
+                                                                <div class="load-bar-content">
+                                                                    <div class="load-bar-progress"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-red"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                                    <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="cattleinfo"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">LiveStock Catalog</h2>
+                                    <div class="el-loading cattlecatalog">
+                                        <div class="el-loading-indicator">
+                                            <div class="progress progress-position-absolute-bottom">
+                                                <div class="load-bar">
+                                                    <div class="load-bar-base">
+                                                        <div class="load-bar-content">
+                                                            <div class="load-bar-progress"></div>
+                                                            <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                            <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                            <div class="load-bar-progress load-bar-progress-red"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="load-bar">
+                                                    <div class="load-bar-base">
+                                                        <div class="load-bar-content">
+                                                            <div class="load-bar-progress"></div>
+                                                            <div class="load-bar-progress load-bar-progress-red"></div>
+                                                            <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                            <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-wrap" id="cattlecatalog" tile-wrap-animation style="min-height:200px;position:relative">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--TAB THREE-->
+                            <div>
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Select Livestocks to Create Lot</h2>
+                                    <div style="margin:1em">
+                                        <form>
+                                            <div class="row">
+                                                <div class="form-group form-group-label">
+                                                    <div class="col-md-5">
+                                                        <div class="media">
+                                                            <div class="media-object pull-left">
+                                                                <label class="form-icon-label" for="farmerbatchid"><span class="access-hide">Batch Number</span><i class="fa fa-barcode fa-2x" aria-hidden="true"></i></label>
+                                                            </div>
+                                                            <div class="media-inner">
+                                                                <input class="form-control" id="farmerbatchid" data-bind="value: vp01homeModel.batchid" type="text">
+                                                                <small><i>(Please scan livestock ear tag barcode)</i></small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <span class="align-center">OR</span>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <button class="btn btn-blue waves-button waves-light waves-effect" id="pickCattles" type="button"><span class="icon icon-search icon-lg"></span>Pick Livestock</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="dialog"></div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div id="selectbatch"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-btn">
+                                                <button class="btn waves-button waves-light waves-effect" id="createBatch" type="button"><span class="icon icon-my-library-add icon-lg"></span>Create Lot</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Created Lots</h2>
+                                    <div class="el-loading batchcatalog">
+                                        <div class="el-loading-indicator">
+                                            <div class="progress progress-position-absolute-bottom">
+                                                <div class="load-bar">
+                                                    <div class="load-bar-base">
+                                                        <div class="load-bar-content">
+                                                            <div class="load-bar-progress"></div>
+                                                            <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                            <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                            <div class="load-bar-progress load-bar-progress-red"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="load-bar">
+                                                    <div class="load-bar-base">
+                                                        <div class="load-bar-content">
+                                                            <div class="load-bar-progress"></div>
+                                                            <div class="load-bar-progress load-bar-progress-red"></div>
+                                                            <div class="load-bar-progress load-bar-progress-purple"></div>
+                                                            <div class="load-bar-progress load-bar-progress-alt"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-wrap" id="batchcatalog" tile-wrap-animation style="min-height:200px;position:relative">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--TAB FOUR-->
+                            <div>
+                                <div>
+                                    <div class="col-lg-10 col-sm-12">
+                                        <h2 class="content-sub-heading">Select Lot to Transfer</h2>
+                                        <div style="margin:1em">
+                                            <form>
+                                                <div class="form-group form-group-label">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <label class="floating-label" for="sender">Select Receiver</label>
+                                                            <select id="sender" class="form-control" data-bind="value: vp01homeModel.sender" style="width: 100%;">
+                                                                <option>Fresh Meats</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <h3 class="content-sub-heading">Lot IDs </h3>
+                                                        <div id="batchdialog"></div>
+                                                        <div id="selectbatchid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-btn">
+                                                    <button class="btn btn-blue waves-button waves-light waves-effect" id="pickbatch" type="button"><span class="icon icon-search icon-lg"></span>Pick Lot</button>
+                                                    <button class="btn waves-button waves-light waves-effect" id="transferBatch" type="button"><span class="icon icon-local-shipping icon-lg"></span>Transfer Selected Lot</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TAB Five-->
+                            <div>
+                                <div class="col-lg-10 col-sm-12">
+                                    <h2 class="content-sub-heading">Track Livestock</h2>
+                                    <div class="card-wrap">
+                                        <div class="row">
+                                            <div style="margin:1em">
+                                                <form class="form">
+                                                    <div class="form-group form-group-label">
+                                                        <div class="row">
+                                                            <div class="col-md-10 col-md-push-1">
+                                                                <label class="floating-label" for="transcattleTagid">Tag ID</label>
+                                                                <input class="form-control" id="transcattleTagid" data-bind="value: vp01homeModel.transcattleTagid" required type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group align-center">
+                                                        <div class="form-group-btn col-md-push-1">
+                                                            <button class="btn btn-blue waves-button waves-light waves-effect" type="button" data-bind="events : { click: vp01homeModel.showTransaction }"><span class="icon icon-search icon-lg"></span>Get Livestock History</button>
+                                                            <button class="btn waves-button waves-effect" type="reset">Cancel </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="diagramsection">
+                                            <div class="col-lg-12 col-sm-12">
+                                                <h2 class="content-sub-heading">Transaction Information</h2>
+                                                <div class="card">
+                                                    <div class="card-main">
+                                                        <div class="card-inner">
+                                                            <div style="margin:1em">
+                                                                <div id="diagram" style="height:500px"></div>
+                                                                <div id="blockwindow"></div>
+                                                                <div class="fbtn-container" style="right:60px;bottom:200px;">
+                                                                    <div class="fbtn-inner">
+                                                                        <div class='my-legend'>
+                                                                            <div class='legend-title'>Legends</div>
+                                                                            <div class='legend-scale'>
+                                                                                <ul class='legend-labels'>
+                                                                                    <li><span style='background:#2196f3;'></span>Livestock Creation</li>
+                                                                                    <li><span style='background:#8700ff;'></span>Lot Creation</li>
+                                                                                    <li><span style='background:#00e68a;'></span>Inventory Transfer</li>
+                                                                                    <li><span style='background:#f44336;'></span>Rawmeat Creation</li>
+                                                                                    <li><span style='background:#ffaa00;'></span>Rawmeat Lot Creation</li>
+                                                                                    <li><span style='background:#e600e6;'></span>Package Creation</li>
+                                                                                    <li><span style='background:#1e4c96;'></span>Retailer</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <!--<div class='legend-source'>Source: <a href="#link to source">Name of source</a></div>-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .k-tabstrip-items {
+        background-image: none,linear-gradient(to bottom,#2196f3 0,#fafafa 100%);
+    }
+
+    .tile-collapse.active {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .k-dialog .k-dialog-buttongroup.k-dialog-button-layout-stretched li.k-button:first-child {
+        width: 49%;
+        border-style: none;
+    }
+
+    #treeview .k-checkbox {
+        opacity: 0;
+    }
+
+    #batchtreeview .k-checkbox {
+        opacity: 0;
+    }
+
+    .query-match {
+        color: red;
+    }
+
+    .select-all-wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .selected-count {
+        float: right;
+        color: #aaa;
+    }
+
+    .selectedName {
+        padding: 5px 10px;
+        background: #aaa;
+        color: white;
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+
+    #selectbatch {
+        padding-bottom: 15px;
+    }
+
+        #selectbatch:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+</style>
+
+
+<script id="cattlecatalogTemplate" type="text/x-kendo-template">
+    <div class="tile">
+        <div class="tile-inner">
+            Click each Livestock to review
+        </div>
+    </div>
+
+    # for(var i = 0 ;i < cattle.length; i++){ #
+    <div class="tile tile-collapse tile-collapse-full">
+        <div class="tile-toggle" data-parent=".content" data-target="\#tile-collapse-${i}" data-toggle="tile">
+            <div class="pull-left tile-side">
+                <div class="avatar avatar-red avatar-sm">
+                    <span class="icon icon-label"></span>
+                </div>
+            </div>
+            <div class="tile-inner">
+                <div class="text-overflow">Ear Tag - ${cattle[i].cattletag}</div>
+            </div>
+        </div>
+        <div class="tile-active-show tile-active-show-still collapse" id="tile-collapse-${i}">
+            <div class="tile-sub">
+                <p>
+                    <strong>Herd Mark : </strong> ${cattle[i].cattleid} <br />
+                    <strong>Ear Tag ID : </strong> ${cattle[i].cattletag}<br />
+                    <strong>Livestock Type : </strong> ${cattle[i].cattletype}<br />
+                    <strong>Birthdate : </strong> ${cattle[i].birthdate}<br />
+                    <strong>Weight : </strong> ${cattle[i].weight} pounds<br />
+                    <strong>Status : </strong> ${cattle[i].status} <br />
+                    <strong>Certificate : </strong> ${cattle[i].certificate}
+            </div>
+            <div class="tile-footer">
+                <ul class="nav nav-list pull-left">
+                    <li>
+                        <a class="k-button km-primary viewcert"><span class="icon icon-check text-white"></span>&nbsp;<span class="text-white">Review</span></a>
+                    </li>
+                    <li>
+                        <a data-dismiss="tile" href="javascript:void(0)"><span class="icon icon-close"></span>&nbsp;Cancel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    # } #
+</script>
+
+<script id="batchTemplate" type="text/x-kendo-template">
+    <div class="tile">
+        <div class="tile-inner">
+            Click Lot Number to view Livestock Details
+        </div>
+    </div>
+
+    # for(var i = 0 ;i < batchdetail.length; i++){ #
+    <div class="tile tile-collapse tile-collapse-full">
+        <div class="tile-toggle" data-parent=".content" data-target="\#livestockbatch-collapse-${i}" data-toggle="tile">
+            <div class="pull-left tile-side">
+                <div class="avatar avatar-red avatar-sm">
+                    <span class="icon icon-label"></span>
+                </div>
+            </div>
+            <div class="tile-inner">
+                <div class="text-overflow">Lot ID - ${batchdetail[i].batchdetail.batchid}</div>
+            </div>
+        </div>
+        <div class="tile-active-show tile-active-show-still collapse" id="livestockbatch-collapse-${i}">
+            <div class="tile-sub">
+                <p>
+                    <strong>Lot ID : </strong> ${batchdetail[i].batchdetail.batchid}<br />
+                    <strong>Batch date: </strong> ${batchdetail[i].batchdetail.batchdate} <br />
+                    <strong>Source : </strong> ${batchdetail[i].batchdetail.source}<br />
+                    <strong>Livestock List :</strong> <br />
+                    # var tags = batchdetail[i].batchdetail.taglist.split(",");  #
+                    # for (var j=0 ;j < tags.length ;j++){#
+                    <i>${tags[j]}</i>
+                     # } #
+            </div>
+            <div class="tile-footer">
+                <ul class="nav nav-list pull-left">
+                    <li>
+                        <a data-dismiss="tile" href="javascript:void(0)"><span class="icon icon-close"></span>&nbsp;Close</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    # } #
+</script>
+
+<script id="inventoryTemplate" type="text/x-kendo-template">
+
+    <table width="50%" align="center"  class="km-nova">
+        <tr>
+            <td align="center" data-badge=""><b>Livestock Inventory</b> <div id="counter" class="text-center pulse"><a><span class="count">${cattleinventory}</span></a></div></td>
+            <td align="center" data-badge=""><b>Lot Inventory</b> <div id="counter2" class="text-center pulse"><a><span class="count">${batchinventory}</span></a></div></td>
+            <td align="center" data-badge=""><b>Transfer Inventory</b> <div id="counter3" class="text-center pulse"><a><span class="count">${transferinventory}</span></a></div></td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+    </table>
+
+</script>
+
+<script id="cattleTemplate" type="text/x-kendo-template">
+    <div class="card">
+        <a data-role="button" class="card-side card-side-right" data-bind="events :{click : vp01homeModel.closecatteinfo}"><span class="card-heading icon icon-close"></span></a>
+        <div class="card-main">
+            <div class="card-inner">
+                <h2 class="card-heading">${species} - ${cattletype}</h2>
+                <p>
+                    <strong>Livestock Id : </strong> ${cattleid} <br />
+                    <strong>Cattle Tag : </strong> ${cattletag}<br />
+                    <strong>Birthdate : </strong> ${birthdate}<br />
+                    <strong>Weight : </strong> ${weight} pounds<br />
+                    <strong>Status : </strong> ${status} <br />
+                    <strong>Certificate : </strong> ${certificate}
+                </p>
+            </div>
+            <div class="card-action">
+                <ul class="nav nav-list pull-left">
+                    <li>
+                        <a href="javascript:void(0)"><span class="icon icon-check text-blue"></span>&nbsp;<span class="text-blue">Review</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</script>

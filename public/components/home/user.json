@@ -1,0 +1,35 @@
+﻿[
+  {
+    "username": "farmer",
+    "password": "farmer",
+    "displayname": "Farmers",
+    "peer": "vp0",
+    "chaincodeid": "c591089edf5b1d090b540d3ad4ba1f8d557e6de5e69b9edfe9fc020c175182400a20131f7e90770c6efca8d01794da40e2faf53ebe3da3c81ea6ba26fb164587",
+    "securecontext": "user_type1_0"
+  },
+  {
+    "username": "processor",
+    "password": "processor",
+    "displayname" : "Fresh Meats",
+    "peer": "vp1",
+    "chaincodeid": "c591089edf5b1d090b540d3ad4ba1f8d557e6de5e69b9edfe9fc020c175182400a20131f7e90770c6efca8d01794da40e2faf53ebe3da3c81ea6ba26fb164587",
+    "securecontext" : "user_type1_0"
+  },
+  {
+    "username": "package",
+    "password": "package",
+    "displayname" : "Meat Packaging Ltd",
+    "peer": "vp2",
+    "chaincodeid": "c591089edf5b1d090b540d3ad4ba1f8d557e6de5e69b9edfe9fc020c175182400a20131f7e90770c6efca8d01794da40e2faf53ebe3da3c81ea6ba26fb164587",
+    "securecontext" : "user_type1_0"
+  },
+  {
+    "username": "retailer",
+    "password": "retailer",
+    "displayname" : "Retailer",
+    "peer": "vp3",
+    "chaincodeid": "c591089edf5b1d090b540d3ad4ba1f8d557e6de5e69b9edfe9fc020c175182400a20131f7e90770c6efca8d01794da40e2faf53ebe3da3c81ea6ba26fb164587",
+    "securecontext" : "user_type1_0"
+  }
+
+]

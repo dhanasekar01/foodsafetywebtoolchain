@@ -1,0 +1,51 @@
+{
+  "ProjectName": "FoodCom",
+  "ProjectGuid": "272c3f01-f1a4-4726-abbb-953e6c55a89d",
+  "projectVersion": 1,
+  "AppIdentifier": "com.infy.FoodCom",
+  "DisplayName": "FoodCom",
+  "Author": "Dhanasekar Mohan",
+  "Description": "FoodCom",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+    "android.permission.CALL_PHONE",
+    "android.permission.CAMERA",
+    "android.permission.INTERNET",
+    "android.permission.STATUS_BAR"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{c694b0f1-65c9-466d-a4ab-b79977964df5}",
+  "WP8ProductID": "{ea67660d-b878-498f-a7b7-39970a5d6c90}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.FoodCom",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
